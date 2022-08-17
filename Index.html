@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCX - Nero Cryptocurrency Exchange</title>
+    <link rel="icon" type="image/x-icon" href="../NCX HTML/src/images/svgs/NCX Logo.svg">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+    <script src="../NCX HTML/components/first-section.js"></script>
+    <script type=module src="app.js"></script>
+    <script type=module src="components/first-section.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../NCX HTML/components/second-section.js"></script>
+    <script type=module src="/components/second-section.js"></script>
+    <script src="../NCX HTML/components/third-section.js"></script>
+    <script type=module src="/components/third-section.js"></script>
+    <script src="../NCX HTML/components/fourth-section.js"></script>
+    <script type=module src="/components/fourth-section.js"></script>
+    <script src="../NCX HTML/components/spacer.js"></script>
+    <script type=module src="/components/spacer.js"></script>
+    <script src="../NCX HTML/components/fifth-section.js"></script>
+    <script type=module src="/components/fifth-section.js"></script>
+    <script src="../NCX HTML/components/seventh-section.js"></script>
+    <script type=module src="/components/seventh-section.js"></script>
+    <script src="..//NCX HTML/components/eight-section.js"></script>
+    <script type=module src="/components/eight-section.js"></script>
+    <script src="..//NCX HTML/components/defi-section.js"></script>
+    <script type=module src="/components/defi-section.js"></script>
+    <script src="..//NCX HTML/components/cryptoassets.js"></script>
+    <script type=module src="/components/cryptoassets.js"></script>
+    <script src="../NCX HTML/components/security-platform.js"></script>
+    <script type=module src="/components/security-platform.js"></script>
+    <script src="..//NCX HTML/components/gradient-bar.js"></script>
+    <script type=module src="/components/gradient-bar.js"></script>
+    <script src="..//NCX HTML/components/decentralised-setion.js"></script>
+    <script type="module" src="/components/decentralised-setion.js"></script>
+    <script src="..//NCX HTML/components/playacross-section.js"></script>
+    <script type=module src="/components/playacross-section.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  </head>
+
+  <my-header></my-header>
+  <first-video-section id="homepage-first-section"></first-video-section>
+  <second-text-section id="homepage-second-section"></second-text-section>
+  <third-demo-section id="homepage-third-section"></third-demo-section>
+  <my-spacer-section id="spacer-1"></my-spacer-section>
+  <fourth-features-section id="homepage-fourth-section"></fourth-features-section>
+  <my-spacer-section id="spacer-2"></my-spacer-section>
+  <fifth-order-type-section id="fifth-order-type"></fifth-order-type-section>
+  <my-spacer-section id="spacer-3"></my-spacer-section>
+  <seventh-background-section id="seventh-crypto-exchange-section"></seventh-background-section>
+  <crypto-assets id="crypto-asetss"></crypto-assets>
+  <my-spacer-section id="spacer-5"></my-spacer-section>
+  <security-platform-section id="security-platform"></security-platform-section>
+  <my-spacer-section id="spacer-4"></my-spacer-section>
+  <gradient-section></gradient-section>
+  <decentralised-finance></decentralised-finance>
+  <defi-homepage-section id="defi-section"></defi-homepage-section>
+  <staking-homepagesection id="staking-sectino"></staking-homepagesection>
+  <featured-currency-circle></featured-currency-circle>
+
+  <my-footer></my-footer>
+
+</html>
+
+
+
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".heading_text").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if (!$(this).hasClass("reveal__content")) {$(this).addClass("reveal__content");}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).hasClass("reveal__content")) {$(this).removeClass("reveal__content");}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fading-one").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fading-two").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(1000,1);}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fading-three").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(1500,1);}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fading-four").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(1500,1);}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var sectionZ = $('.first-text-div').offset().top;
+    var sectionY = $('.image-div').offset().top;
+    var sectionX = $('#hh_second_sect').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > sectionZ && scroll < sectionY) {
+        $('.hh_column').addClass('animate-normal');
+      } else if(scroll < sectionX){
+          $('.hh_column').removeClass('animate-normal');
+          $('.hh_column').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linespace1 = $('#fourth-featured-section').offset().top;
+    var linespace2 = $('#spacer-2').offset().top;
+    var linespace3 = $('#spacer-1').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linespace3 && scroll < linespace2) {
+        $('.line-spacer').addClass('animate-normal');
+      } else if(scroll < linespace1){
+          $('.line-spacer').removeClass('animate-normal');
+          $('.line-spacer').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linebars = $('#spacer-1').offset().top;
+    var linebar = $('#spacer-2').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linebars && scroll < linebar) {
+        $('.text_line_moving').addClass('animate-normal');
+      } else if(scroll < linebars){
+          $('.text_line_moving').removeClass('animate-normal');
+          $('.text_line_moving').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fading").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+              } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+              }
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linebars = $('#spacer-2').offset().top;
+    var linebar = $('#spacer-3').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linebars && scroll < linebar) {
+        $('#fifth-ordertype-section .text_line_moving').addClass('animate-normal');
+      } else if(scroll < linebars){
+          $('#fifth-ordertype-section .text_line_moving').removeClass('animate-normal');
+          $('#fifth-ordertype-section .text_line_moving').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linebarss = $('#seventh-exchange-section').offset().top;
+    var linebars = $('#spacer-5').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linebarss && scroll < linebars) {
+        $('#cryptoassets-main-seciton .text_line_moving').addClass('animate-normal');
+      } else if(scroll < linebarss){
+          $('#cryptoassets-main-seciton .text_line_moving').removeClass('animate-normal');
+          $('#cryptoassets-main-seciton .text_line_moving').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linebarss = $('#decentralised-finance-section .third-swaping').offset().top;
+    var linebars = $('#staking-footer-section').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linebarss && scroll < linebars) {
+        $('#defi-main-seciton .text_line_moving').addClass('animate-normal');
+      } else if(scroll < linebarss){
+          $('#defi-main-seciton .text_line_moving').removeClass('animate-normal');
+          $('#cryptoassets-main-seciton .text_line_moving').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+</script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+<!-- Gradient bar section -->
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linegrade1 = $('.iamge-div img').offset().top;
+    var linegrade2 = $('#defi-main-seciton').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linegrade1 && scroll < linegrade2) {
+        $('.gradient_color_line_bottom').addClass('animate-normal');
+      } else if(scroll < linegrade1){
+          $('.gradient_color_line_bottom').removeClass('animate-normal');
+          $('.gradient_color_line_bottom').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+        // find the top of each section
+    var linegrade1 = $('#decentralised-finance-section').offset().top;
+    var linegrade2 = $('#defi-section').offset().top;
+    // number of pixels before the section to start animation
+    var scrollOffset = 100; 
+    // run this function when the window scrolls
+    $(window).scroll(function() { 
+       
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;  
+    
+      // if scroll hits the top of section-b
+      if ( scroll > linegrade1 && scroll < linegrade2) {
+        $('.moving-lineswap').addClass('animate-normal');
+      } else if(scroll < linegrade1){
+          $('.moving-lineswap').removeClass('animate-normal');
+          $('.moving-lineswap').addClass('newly_animate_class');
+      }
+        
+    });
+    });
+    </script>
